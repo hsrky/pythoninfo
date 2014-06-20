@@ -55,4 +55,4 @@ class PythonInfo(object):
 if __name__ == "__main__":
     cfg_file = sys.argv[1] if len(sys.argv) > 1 else None
     p = PythonInfo(cfg_file)
-    print p.info()
+    print(p.info())

@@ -117,5 +117,5 @@ class SysUtils(object):
             results['ip_address'] = net_util.get_host_ip()
         except:
             print('Failed to get net info')
-            print traceback.print_exc()
+            #print traceback.print_exc()
         return results

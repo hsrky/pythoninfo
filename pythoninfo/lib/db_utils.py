@@ -1,3 +1,5 @@
+import traceback
+
 class DbUtils(object):
     #FIXME change to plugin style and read query from custom config files
     db = None
@@ -34,7 +36,7 @@ class DbUtils(object):
                                          db=db['dbname'])
         except:
             print('Failed to open connection to db {} using user {}'.format(db['host'], db['username']))
-            import traceback; print traceback.print_exc()
+            #print traceback.print_exc()
             return False
         
         return True
@@ -48,14 +50,14 @@ class DbUtils(object):
             cur = self.db_conn.cursor()
         except:
             print('Failed to create connection cursor.')
-            import traceback; print traceback.print_exc()
+            #print traceback.print_exc()
             return False
         try:
             cur.execute(sql)
         except:
             cur.close()
             print('Failed to execute SQL command.')
-            import traceback; print traceback.print_exc()
+            #print traceback.print_exc()
             return False
         
         cur.close()

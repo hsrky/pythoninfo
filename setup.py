@@ -12,7 +12,7 @@ setup (
   author_email = 'ky.github@outlook.com',
   description = 'Python environment information for debugging',
   long_description= open('README.md').read(),
-  url = '',
+  url = 'https://github.com/hsrky/pythoninfo/',
   download_url = '',
   license = 'LICENSE.txt',
   keywords = ['debugging', 'testing'],

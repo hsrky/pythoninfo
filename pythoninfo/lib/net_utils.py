@@ -1,3 +1,5 @@
+import traceback
+
 class NetUtils(object):
     time_out = 20 # 20 seconds timeout
     def __init__(self, time_out=None):
@@ -17,7 +19,7 @@ class NetUtils(object):
             sock.close()
         except:
             print('Failed to connect to {}:{} - '.format(ip, port))
-            import traceback; print traceback.print_exc()
+            #print traceback.print_exc()
             sock.close()
 
         if result == 0:
