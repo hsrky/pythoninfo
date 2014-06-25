@@ -1,5 +1,4 @@
 import os
-import traceback
 from net_utils import NetUtils
 class SysUtils(object):
     @staticmethod

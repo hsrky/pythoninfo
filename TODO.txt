@@ -1,0 +1,6 @@
+1. Lint checking
+2. Unit test/spec
+3. Test lib/FileUploader
+4. Integrate lib/FileUploader into NetUtils
+5. Make pythoninfo extendable via configuration file
+6. Get Packages, Net and DB info.

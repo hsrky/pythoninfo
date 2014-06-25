@@ -1,5 +1,3 @@
-import traceback
-
 class NetUtils(object):
     time_out = 20 # 20 seconds timeout
     def __init__(self, time_out=None):

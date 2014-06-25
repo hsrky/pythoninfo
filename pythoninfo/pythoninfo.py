@@ -10,10 +10,14 @@
 ############################################################################
 import sys
 import json
-from lib import DbUtils, NetUtils, SysUtils
+from lib import SysUtils
+#from lib import DbUtils
+#from lib import NetUtils
+
 class PythonInfo(object):
 
     class ResultStruct(object):
+        # result storage n converter
         data = dict()
 
         def __str__(self):
@@ -32,6 +36,7 @@ class PythonInfo(object):
     data = ResultStruct()
 
     def _retrieve_basic_data(self):
+        # get sys info from python API
         sys_result = dict()
         for func_name in dir(SysUtils):
             if not func_name.startswith('get'):
